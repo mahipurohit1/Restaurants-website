@@ -21,3 +21,26 @@ links.forEach(function (link) {
     }
   });
 });
+
+const eleHero = document.querySelector(".section-hero");
+const home = document.querySelector(".home");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      home.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      home.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-50px",
+  }
+);
+obs.observe(eleHero);
