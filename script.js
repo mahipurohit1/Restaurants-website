@@ -40,7 +40,7 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-50px",
+    rootMargin: "-80px",
   }
 );
 obs.observe(eleHero);
