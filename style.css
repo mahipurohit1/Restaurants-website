@@ -28,6 +28,7 @@ body {
   background-image: url(img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 9.6rem;
 }
 .header {
   display: flex;
@@ -83,7 +84,7 @@ body {
 
 /* section -hero */
 .section-hero {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 3.2rem 0;
 }
 .container {
   max-width: 120rem;
