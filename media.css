@@ -85,7 +85,8 @@
   .home.open {
     overflow: hidden;
   }
-  .home.open .nav-link {
+  .home.open .nav-link:link,
+  .home.open .nav-link:visited {
     color: #333;
   }
   .home.open .nav-link:hover,

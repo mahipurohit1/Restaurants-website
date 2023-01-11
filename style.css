@@ -48,12 +48,10 @@ body {
 .home.sticky .section-hero {
   margin-top: 8rem;
 }
-.home.sticky .menu-open {
-}
-.home.sticky .menu-close {
-}
+
 .logo {
   height: 3rem;
+  margin-top: -0.8rem;
   fill: #e9781c;
 }
 .nav-ul {
