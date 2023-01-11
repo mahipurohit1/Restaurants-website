@@ -7,6 +7,8 @@ links.forEach(function (link) {
     const href = link.getAttribute("href");
 
     if (href === "#") {
+      document.body.classList.remove("over");
+      home.classList.remove("open");
       window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -14,6 +16,8 @@ links.forEach(function (link) {
     }
 
     if (href !== "#" && href.startsWith("#")) {
+      document.body.classList.remove("over");
+      home.classList.remove("open");
       const element = document.querySelector(href);
       element.scrollIntoView({
         behavior: "smooth",
@@ -44,3 +48,16 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(eleHero);
+
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+const header = document.querySelector(".header");
+
+menuOpen.addEventListener("click", function () {
+  home.classList.add("open");
+  document.body.classList.add("over");
+});
+menuClose.addEventListener("click", function () {
+  home.classList.remove("open");
+  document.body.classList.remove("over");
+});

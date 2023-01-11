@@ -48,8 +48,12 @@ body {
 .home.sticky .section-hero {
   margin-top: 8rem;
 }
+.home.sticky .menu-open {
+}
+.home.sticky .menu-close {
+}
 .logo {
-  height: 2.4rem;
+  height: 3rem;
   fill: #e9781c;
 }
 .nav-ul {
@@ -249,4 +253,15 @@ body {
   font-weight: 500;
   margin-top: 2rem;
   color: #333;
+}
+
+.menu-open,
+.menu-close {
+  display: none;
+  height: 3.5rem;
+  z-index: 99999;
+}
+.over {
+  height: 100vh;
+  overflow: hidden;
 }
