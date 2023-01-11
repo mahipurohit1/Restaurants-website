@@ -1,4 +1,7 @@
 @media (max-width: 80em) {
+  .section-hero {
+    height: auto;
+  }
   .html {
     font-size: 56.25%;
   }
@@ -29,9 +32,7 @@
   .html {
     font-size: 50%;
   }
-  .section-hero {
-    height: auto;
-  }
+
   .grid-2-column {
     grid-template-columns: 1fr;
   }
