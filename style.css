@@ -256,7 +256,7 @@ body {
 .menu-open,
 .menu-close {
   display: none;
-  height: 3.5rem;
+  height: 3rem;
   z-index: 99999;
 }
 .over {
